@@ -15,7 +15,7 @@ export default function Contact() {
         </label>
         <label className='block mb-4'>
           Mensagem:
-          <textarea name='message' className='w-full p-2 mt-1 border rounded-md' rows='4' required></textarea>
+          <textarea name='message' className='w-full p-2 mt-1 border rounded-md' rows={4} required></textarea>
         </label>
         <button className='w-full p-2 bg-blue-600 text-white rounded-md hover:bg-blue-700'>Enviar</button>
       </form>
