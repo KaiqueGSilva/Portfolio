@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function Navbar() {
   return (
     <nav className='flex justify-center space-x-8 py-4 bg-black/50 sticky top-0'>
