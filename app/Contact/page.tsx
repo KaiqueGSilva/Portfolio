@@ -1,28 +1,16 @@
-import Link from 'next/link';
-
 export default function Contact() {
   return (
-    <div className='min-h-screen p-4 bg-gray-100 text-gray-900'>
-      <h1 className='text-4xl font-bold text-center mb-6'>Contato</h1>
-      <form action='https://formspree.io/f/{YOUR_FORM_ID}' method='POST' className='max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6'>
-        <label className='block mb-4'>
-          Nome:
-          <input type='text' name='name' className='w-full p-2 mt-1 border rounded-md' required />
-        </label>
-        <label className='block mb-4'>
-          Email:
-          <input type='email' name='email' className='w-full p-2 mt-1 border rounded-md' required />
-        </label>
-        <label className='block mb-4'>
-          Mensagem:
-          <textarea name='message' className='w-full p-2 mt-1 border rounded-md' rows={4} required></textarea>
-        </label>
-        <button className='w-full p-2 bg-blue-600 text-white rounded-md hover:bg-blue-700'>Enviar</button>
+    <div>
+      <h1 className="text-3xl font-bold mb-4">Contato</h1>
+      <form action="https://formsubmit.co/seu-email@gmail.com" method="POST" className="flex flex-col gap-2 max-w-md">
+        <input type="text" name="name" placeholder="Nome" required className="p-2 border" />
+        <input type="email" name="email" placeholder="Email" required className="p-2 border" />
+        <textarea name="message" placeholder="Mensagem" required className="p-2 border"></textarea>
+        <button type="submit" className="bg-blue-500 text-white p-2 rounded">Enviar</button>
       </form>
-      <div className='flex justify-center mt-6 space-x-4'>
-        <a href='#'><img src='/icons/facebook.svg' alt='Facebook' className='w-6 h-6' /></a>
-        <a href='#'><img src='/icons/instagram.svg' alt='Instagram' className='w-6 h-6' /></a>
-        <a href='#'><img src='/icons/linkedin.svg' alt='LinkedIn' className='w-6 h-6' /></a>
+      <div className="mt-4 flex gap-4">
+        <a href="https://linkedin.com/in/seuperfil" target="_blank">LinkedIn</a>
+        <a href="https://github.com/seuperfil" target="_blank">GitHub</a>
       </div>
     </div>
   );
