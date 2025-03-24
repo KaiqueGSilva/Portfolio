@@ -1,5 +1,5 @@
-import '../styles/globals.css';
-import Navbar from '../components/Navbar';
+import '../styles/global.css';
+import Navbar from '../components/navbar'
 
 export const metadata = {
   title: 'Meu Portfólio',
